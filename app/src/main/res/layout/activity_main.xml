@@ -9,27 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--<android.support.v7.widget.Toolbar-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--app:layout_scrollFlags="scroll|enterAlways">-->
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="我是标题栏"/>
-
-        <!--</android.support.v7.widget.Toolbar>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="顶部标题"
+            android:textColor="#fff"
+            app:layout_scrollFlags="scroll"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@android:color/holo_red_light"
+            android:background="@android:color/holo_green_light"
             android:gravity="center"
             android:minHeight="50dp"
             android:text="内 容 区 域"
-            android:textColor="@android:color/holo_green_light"
+            android:textColor="#fff"
             android:textSize="18sp"
             app:layout_scrollFlags="scroll"/>
 

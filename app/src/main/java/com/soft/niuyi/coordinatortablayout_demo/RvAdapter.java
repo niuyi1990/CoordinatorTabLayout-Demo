@@ -1,9 +1,9 @@
 package com.soft.niuyi.coordinatortablayout_demo;
 
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.BaseViewHolder;
+
+import java.util.List;
 
 /**
  * 作者：牛毅
@@ -11,28 +11,16 @@ import android.view.ViewGroup;
  * 邮箱：niuyi19900923@gmail.com
  * 描述：
  */
-public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
+public class RvAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
-    @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv, parent, false);
-        return new ViewHolder(view);
+    public RvAdapter(List<String> data) {
+        super(R.layout.item_rv, data);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    protected void convert(BaseViewHolder helper, String item) {
 
     }
 
-    @Override
-    public int getItemCount() {
-        return 15;
-    }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-        }
-    }
 }
