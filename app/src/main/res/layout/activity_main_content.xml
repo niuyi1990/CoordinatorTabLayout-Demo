@@ -15,6 +15,7 @@
             android:background="@android:color/holo_green_light"
             android:gravity="center"
             android:minHeight="50dp"
+            android:visibility="gone"
             android:text="内 容 区 域 \n 这里可以添加你需要的任何内容"
             android:textColor="#fff"
             android:textSize="18sp"
@@ -23,8 +24,9 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_viewpager"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="65dp"
             app:tabIndicatorColor="@android:color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:tabIndicatorHeight="2dp"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@android:color/holo_green_light"
